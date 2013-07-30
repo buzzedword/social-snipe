@@ -115,9 +115,14 @@ Route::get('contact-us', function()
     return View::make('site/contact-us');
 });
 
-# Posts - Second to last set, match slug
-Route::get('{postSlug}', 'BlogController@getView');
-Route::post('{postSlug}', 'BlogController@postView');
+# Posts - Second to last set, match ID
+Route::get('{postId}', 'BlogController@getView');
+Route::post('{postId}', 'BlogController@postView');
 
 # Index Page - Last route, no matches
-Route::get('/', array('before' => 'detectLang','uses' => 'BlogController@getIndex'));
+Route::group(array('before' => 'auth'), function()
+{
+	Route::get('/', array('before' => 'detectLang','uses' => 'BlogController@getIndex'));
+});
+
+

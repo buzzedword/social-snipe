@@ -73,7 +73,7 @@ class Post extends Eloquent implements PresentableInterface {
 	 */
 	public function url()
 	{
-		return Url::to($this->slug);
+		return Url::to($this->id);
 	}
 
 	/**
@@ -97,6 +97,12 @@ class Post extends Eloquent implements PresentableInterface {
 	{
         return $this->date($this->updated_at);
 	}
+	
+	public function published_on()
+	{
+        return $this->date($this->published_on);
+	}
+	
 
     public function getPresenter()
     {

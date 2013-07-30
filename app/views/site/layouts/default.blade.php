@@ -55,7 +55,7 @@
 
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}">Home</a></li>
+							<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}">Snipe Social</a></li>
 						</ul>
 
 			                        <ul class="nav pull-right">

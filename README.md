@@ -1,4 +1,8 @@
 [![Stories in Ready](https://badge.waffle.io/snipe/social-snipe.png)](http://waffle.io/snipe/social-snipe)  
+
+[![Build Status](https://travis-ci.org/snipe/social-snipe.png?branch=master)](https://travis-ci.org/snipe/social-snipe)
+
+
 social-snipe
 ============
 
